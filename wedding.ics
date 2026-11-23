@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invitation//KR//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:wedding-20270117-choi-pham@example.invalid
+DTSTAMP:20261123T100000Z
+DTSTART:20270117T100000Z
+DTEND:20270117T110000Z
+SUMMARY:최준환 ♥ 팜 티 호아이 결혼식
+DESCRIPTION:2027년 1월 17일 오후 5시 (베트남 현지시간)
+LOCATION:Summer Vinh Convention Center\, 343 Lê Duẩn\, Phường Trườ
+ ng Vinh\, Nghệ An\, Việt Nam
+END:VEVENT
+END:VCALENDAR
