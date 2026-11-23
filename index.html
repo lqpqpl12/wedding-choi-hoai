@@ -46,7 +46,10 @@
 .eyebrow,.couple-panel .label{font-size:13px;font-style:normal;letter-spacing:.13em}
 .quote-photo p,.closing .wish{font-size:clamp(19px,5.2vw,24px);font-style:normal;line-height:1.6}
 .hero-content .date{letter-spacing:.10em}.date-head{font:16px 'Noto Serif KR',serif;letter-spacing:.06em}
-#gift-info{white-space:pre-line;overflow-wrap:anywhere}
+.gift-accounts{list-style:none;margin:0;padding:0}
+.gift-accounts li{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #f1e7e6;padding:12px 15px;font-size:12px}
+.gift-accounts .account-number{font-variant-numeric:tabular-nums;white-space:nowrap}
+.gift-accounts .copy-account{flex:none;padding:6px 11px;min-height:44px}
 @media(max-width:599px){.footer{padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}}
 @media(prefers-reduced-motion:no-preference){.hero-content{animation:hero-enter .85s ease-out both}}
 @keyframes hero-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -67,9 +70,11 @@
 <button type="button" aria-label="웨딩 사진 10 확대" data-src="assets/photo_10.webp"><img src="assets/photo_10.webp" loading="lazy" alt="웨딩 사진 10"></button></div><button class="pill-btn alt gallery-more" type="button" id="more-photos" aria-controls="photo-grid" aria-expanded="false">사진 더 보기 ＋</button></section>
 <section class="section couple" id="couple"><div class="reveal"><div class="eyebrow">신랑과 신부</div><h2 class="section-title">저희 두 사람을 소개합니다</h2><div class="couple-panels"><div class="couple-panel"><div class="label">신랑</div><div class="name">최준환</div><div class="sub">Choi Jun Hwan</div></div><div class="couple-panel"><div class="label">신부</div><div class="name">팜 티 호아이</div><div class="sub">Phẩm Thị Hoài</div></div></div></div></section>
 <section class="section venue" id="location"><div class="reveal"><div class="eyebrow">예식장 안내</div><h2 class="section-title">오시는 길</h2><div class="venue-name">Summer Vinh Convention Center</div><div class="venue-kor">서머 빈 컨벤션 센터</div><p class="venue-address">베트남 응에안성 쯔엉빈, 레주언 거리 343<br>343 Lê Duẩn, Phường Trường Vinh,<br>Nghệ An, Việt Nam</p><div class="location-actions"><a href="https://maps.app.goo.gl/mGPciXCmSryP45Ct9?g_st=ac" target="_blank" rel="noopener noreferrer" class="pill-btn">⌖ &nbsp;구글 지도에서 보기</a><button type="button" id="copy-address" class="pill-btn alt">주소 복사</button></div></div><div class="map-shell"><iframe loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="예식장 지도" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.9833684287546!2d105.68930359999999!3d18.664742299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3139cd92da77d61b%3A0x8758d373a8773500!2sSummer%20Vinh%20Convention%20Center!5e0!3m2!1sko!2skr!4v1795430581562!5m2!1sko!2skr"></iframe></div><p class="venue-note">현지 이동 시 위의 ‘구글 지도에서 보기’를 누르면<br>안내받으신 실제 예식장 위치로 연결됩니다.</p></section>
-<section class="section gift" id="gift"><div class="reveal"><div class="eyebrow">축하의 마음</div><h2 class="section-title">마음 전하실 곳</h2><p class="gift-desc">멀리서도 축하해 주시는 따뜻한 마음에<br>깊이 감사드립니다.</p><details class="gift-card"><summary>축하의 마음 전하기</summary><p id="gift-info">KB국민은행 94160200423663 · 최준환
-KB국민은행 630302-01-369381 · 박선정
-미래에셋 400284369160 · 최진영</p></details></div></section>
+<section class="section gift" id="gift"><div class="reveal"><div class="eyebrow">축하의 마음</div><h2 class="section-title">마음 전하실 곳</h2><p class="gift-desc">멀리서도 축하해 주시는 따뜻한 마음에<br>깊이 감사드립니다.</p><details class="gift-card"><summary>축하의 마음 전하기</summary><ul id="gift-info" class="gift-accounts">
+  <li><span>KB국민은행 · 최준환<br><span class="account-number">941602-00-423663</span></span><button type="button" class="pill-btn alt copy-account" aria-label="최준환 계좌번호 복사하기">복사하기</button></li>
+  <li><span>KB국민은행 · 박선정<br><span class="account-number">630302-01-369381</span></span><button type="button" class="pill-btn alt copy-account" aria-label="박선정 계좌번호 복사하기">복사하기</button></li>
+  <li><span>미래에셋 · 최진영<br><span class="account-number">400-2843-6916-0</span></span><button type="button" class="pill-btn alt copy-account" aria-label="최진영 계좌번호 복사하기">복사하기</button></li>
+</ul></details></div></section>
 <section class="closing"><img src="assets/photo_04.webp" loading="lazy" alt="행복한 웨딩 사진"><p class="wish">함께해 주셔서 감사합니다</p><p class="names">최준환 <span style="color:#be969e">♥</span> 팜 티 호아이</p><p class="thankyou">2027. 01. 17 · 일요일 오후 5시 (베트남 현지시간)<br>Summer Vinh Convention Center</p></section><footer class="footer">사랑을 담아, 준환과 호아이</footer>
 </main><nav class="bottom-tools" aria-label="빠른 메뉴"><a href="#location"><span class="icon">⌖</span>오시는 길</a><button type="button" id="share"><span class="icon">↗</span>청첩장 공유</button></nav><div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="웨딩 사진 크게 보기" aria-hidden="true"><button class="x" id="close-lightbox" aria-label="닫기">×</button><button class="prev" id="prev-photo" aria-label="이전 사진">‹</button><img id="lightbox-img" alt="확대된 웨딩 사진"><button class="next" id="next-photo" aria-label="다음 사진">›</button><div class="counter" id="lightbox-counter" aria-live="polite"></div></div><div id="toast" class="toast" role="status" aria-live="polite"></div><script>
 const CONFIG={
@@ -78,19 +83,8 @@ const CONFIG={
   dateISO:'2027-01-17T17:00:00+07:00',
   location:'Summer Vinh Convention Center',
   address:'343 Lê Duẩn, Phường Trường Vinh, Nghệ An, Việt Nam',
-  mapURL:'https://maps.app.goo.gl/mGPciXCmSryP45Ct9?g_st=ac',
-  // 계좌를 안내할 때 은행명, 계좌번호, 예금주를 문자열로 입력합니다.
-  groomAccount: null,
-  brideAccount: null
+  mapURL:'https://maps.app.goo.gl/mGPciXCmSryP45Ct9?g_st=ac'
 };
-const accounts = [
-  ['신랑 측', CONFIG.groomAccount],
-  ['신부 측', CONFIG.brideAccount]
-].filter(([, value]) => typeof value === 'string' && value.trim());
-if (accounts.length) {
-  document.getElementById('gift-info').textContent = accounts
-    .map(([side, value]) => `${side} · ${value.trim()}`).join('\n');
-}
 
 // 베트남의 달력 날짜는 현지 자정에 바뀝니다 (UTC+7).
 const dayMs = 24 * 60 * 60 * 1000;
@@ -167,6 +161,13 @@ let touchX=null;preview.addEventListener('touchstart',e=>{touchX=e.touches[0]?.c
 document.getElementById('more-photos').addEventListener('click',e=>{const grid=document.getElementById('photo-grid');const expanded=grid.classList.toggle('expanded');e.currentTarget.textContent=expanded?'사진 접기 −':'사진 더 보기 ＋';e.currentTarget.setAttribute('aria-expanded',String(expanded));});
 let toastTimeout;function showToast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>t.classList.remove('show'),2600);}
 async function copyText(t){try{await navigator.clipboard.writeText(t);return true;}catch(e){return false;}}
+document.querySelectorAll('.copy-account').forEach(button => {
+  button.addEventListener('click', async () => {
+    const number = button.closest('li').querySelector('.account-number').textContent.replaceAll('-', '');
+    if (await copyText(number)) showToast('계좌번호를 복사했습니다.');
+    else window.prompt('계좌번호를 복사해 주세요.', number);
+  });
+});
 document.getElementById('copy-address').addEventListener('click',async()=>{if(await copyText(CONFIG.address))showToast('주소를 복사했습니다.');else window.prompt('주소를 복사해 주세요.',CONFIG.address);});
 document.getElementById('share').addEventListener('click',async()=>{
  if(location.protocol==='file:'){showToast('온라인 게시 후 링크를 공유할 수 있습니다.');return;}
